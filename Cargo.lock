@@ -180,6 +180,7 @@ checksum = "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801"
 name = "color-scheme-generator"
 version = "0.1.0"
 dependencies = [
+ "convolve2d",
  "image",
 ]
 
@@ -188,6 +189,16 @@ name = "color_quant"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3d7b894f5411737b7867f4827955924d7c254fc9f4d91a6aad6b097804b1018b"
+
+[[package]]
+name = "convolve2d"
+version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41021fc23aa2d520519b24c7f17ba8c881aadfb2d372c45357fdc8fb9f391f49"
+dependencies = [
+ "image",
+ "rayon",
+]
 
 [[package]]
 name = "core2"
